@@ -2,7 +2,6 @@
 PHP Router
 
 
-
 ### Features
 - Supports GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD, AJAX and ANY request methods
 - Controllers support (Example: HomeController@about)
@@ -15,3 +14,18 @@ PHP Router
 - Group Routing
 - Custom 404 handling
 - Debug mode (Error message open/close)
+
+
+## Example Usage
+```php
+require 'vendor/autoload.php';
+
+$router = new Buki\Router();
+
+$router->get('/', function() {
+    return 'Hello World!';
+});
+$router->get('/controller', 'TestController@main');
+
+$router->run();
+```
