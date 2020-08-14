@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "type": "library",
+  "homepage": "https://github.com/Japerman/start-router",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jose Perez",
+      "email": "japerman@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.0",
+    "guzzlehttp/guzzle": "^5.3"
+  },
+  "autoload": {
+    "psr-4": {
+  		"Start\\": "src"
+  	}
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Start\\Tests\\": "tests/"
+    }
+  }
+}
