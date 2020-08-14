@@ -29,3 +29,7 @@ $router->get('/controller', 'TestController@main');
 
 $router->run();
 ```
+
+## Wiki
+
+[Wiki](https://github.com/Japerman/Start-router/wiki)
